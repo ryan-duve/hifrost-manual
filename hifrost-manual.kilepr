@@ -3,7 +3,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0
-lastDocument=
+lastDocument=test-chapter.tex
 masterDocument=hifrost.tex
 name=hifrost-manual
 pkg_extIsRegExp=false
@@ -13,7 +13,7 @@ src_extensions=.tex .ltx .latex .dtx .ins
 
 [Tools]
 MakeIndex=
-QuickBuild=PDFLaTeX+ViewPDF
+QuickBuild=PDFLaTeX
 
 [item:fridge-tools.tex]
 archive=true
@@ -21,7 +21,7 @@ column=22
 encoding=UTF-8
 highlight=LaTeX
 line=0
-open=true
+open=false
 order=-1
 
 [item:hifrost-manual.kilepr]
@@ -35,12 +35,21 @@ order=-1
 
 [item:hifrost.tex]
 archive=true
-column=88
+column=16
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=21
 open=true
-order=-1
+order=0
+
+[item:history.tex]
+archive=true
+column=14
+encoding=UTF-8
+highlight=LaTeX
+line=10
+open=true
+order=5
 
 [item:img/duke-logo.png]
 archive=true
@@ -62,45 +71,45 @@ order=-1
 
 [item:mystyle.sty]
 archive=true
-column=6488175
-encoding=
-highlight=
-line=0
-open=false
-order=-1
-
-[item:preface.tex]
-archive=true
-column=20
+column=45
 encoding=UTF-8
 highlight=LaTeX
 line=0
 open=true
-order=-1
+order=1
+
+[item:preface.tex]
+archive=true
+column=0
+encoding=UTF-8
+highlight=LaTeX
+line=3
+open=true
+order=2
 
 [item:project-test-file]
 archive=true
 column=0
 encoding=UTF-8
-highlight=LaTeX
+highlight=None
 line=0
-open=true
+open=false
 order=-1
 
-[item:test-chapter.tex]
-archive=true
-column=28
-encoding=UTF-8
-highlight=LaTeX
-line=0
-open=true
-order=-1
-
-[item:title-page.tex]
+[item:theory.tex]
 archive=true
 column=0
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=6
 open=true
-order=-1
+order=6
+
+[item:title-page.tex]
+archive=true
+column=22
+encoding=UTF-8
+highlight=LaTeX
+line=18
+open=true
+order=4
