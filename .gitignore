@@ -76,3 +76,7 @@
 
 # xindy
 *.xdy
+
+#others
+*~
+*.backup
