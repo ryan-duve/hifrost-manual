@@ -5,12 +5,11 @@
 %\usepackage{makeidx} %If you want to generate an index, automatically 
 \usepackage{graphicx,caption} %If you want to include postscript graphics 
 \usepackage{mystyle} %Create your own file, mystyle.sty where you put all your own \newcommand statements, for example. 
+\usepackage{indentfirst}
 
-%\includeonly{chaptr2} %If you just want to process chaptr2.tex 
 
 
 \begin{document} 
-
 \input{title-page}
 \pagestyle{empty} %no page numbers on first pages
 \include{preface} 
@@ -20,7 +19,9 @@
 \mainmatter 
 \include{history}
 \include{theory}
+\setlength\parindent{0pt} 
 \include{hardware}
+\setlength\parindent{17pt} 
 \include{practical-op}
 \include{procedures} 
 
