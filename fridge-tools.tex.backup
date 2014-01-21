@@ -1,0 +1,8 @@
+\documentclass{book}
+\includeonly{Chapter_1,Chapter_4}  % compile just chapters 1 and 4, space characters not permitted
+\begin{document}
+\include{Chapter_1}                % omit the '.tex' extension
+\include{Chapter_2}
+\include{Chapter_3}
+\include{Chapter_4}
+\end{document}

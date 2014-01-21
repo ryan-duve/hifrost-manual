@@ -1,0 +1,47 @@
+%inspired by http://en.wikibooks.org/wiki/LaTeX/Title_Creation#A_practical_example
+\begin{titlepage}
+\begin{center}
+
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+\noindent\begin{minipage}{.4\textwidth}
+\centering
+\includegraphics[width=\linewidth]{./img/uva-logo.png}~\\[.5cm]
+\textsc{\normalsize University of Virginia}\\[1.5cm]
+\end{minipage}
+\hfill
+\noindent\begin{minipage}{.4\textwidth}
+\centering
+\includegraphics[width=\linewidth]{./img/duke-logo.png}~\\[.5cm]
+\textsc{\normalsize Duke University}\\[1.5cm]
+\end{minipage}
+\\[80pt]
+\textsc{\Large HiFrost Reference Manual}\\[0.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries The HI$\gamma$S Frozen Spin Target \\[0.4cm] }
+
+\HRule \\[1.5cm]
+
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Ryan \textsc{Duve}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Blaine \textsc{Norum}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}
