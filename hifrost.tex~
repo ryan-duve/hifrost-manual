@@ -4,7 +4,6 @@
 \usepackage{amssymb} %Some extra symbols 
 %\usepackage{makeidx} %If you want to generate an index, automatically 
 \usepackage{graphicx,caption} %If you want to include postscript graphics 
-\usepackage{subcaption}
 \usepackage{mystyle} %Create your own file, mystyle.sty where you put all your own \newcommand statements, for example. 
 
 %\includeonly{chaptr2} %If you just want to process chaptr2.tex 
@@ -13,10 +12,9 @@
 \begin{document} 
 
 \input{title-page}
-
+\include{preface} 
 \frontmatter 
 \tableofcontents 
-\include{preface} 
 
 \mainmatter 
 \include{fridge-tools} 
