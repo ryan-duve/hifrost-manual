@@ -1,2 +1,76 @@
 \chapter{Safety} 
-\label{safety}  
+\label{safety}
+This chapter is about personnel safety, not equipment safety.  Learning to use HiFrost equipment properly without damaging anything is the aim this whole manual.  Safety of lab users, however, is important enough to warrant an entire devoted chapter, even if many points are reiterated throughout the document.
+
+\vspace{1cm}
+\fbox{\parbox{.93\textwidth}{\subsubsection{Ways to die or become seriously injured working on HiFrost:}
+\begin{itemize}
+\item Cryogenic explosions
+\item Cryogenic burns
+\item Oxygen depravation
+\item Electric shock
+\item Falling
+\item Hot surfaces
+\item Chemical exposure
+\end{itemize}
+}}
+
+\section{Cryogenic Safety}
+Both liquid nitrogen (\lnn, 77 K) and liquid helium (LHe, 4 K) are used during HiFrost operation.  The two primary cryogenic safety concerns are over-pressurization (explosion) of cryogenic vessels and cryogenic burns.  \lnn{} and LHe are each at risk of both, and precautions are taken while handling either. 
+\subsection{Equipment}
+\subsubsection{Cryogenic gloves}
+Cryogenic gloves are lined internally with super-insulation and are long enough to cover past halfway between the wrist and elbow.  HiFrost equipment includes large and medium sized sets of gloves, and the best fitting size should always be used.  Typical activities requiring use of cryo gloves are filling the \lnn{} trap, inserting and removing LHe transfer lines, filling \lnn{} dewars for the target loading procedure, and making or manipulating target beads.
+
+\subsubsection{Goggles}
+Wearing googles and/or a face shield while handling open \lnn{} dewars is recommended.  Goggles also protect users in the vicinity of the large helium gas plumes expected during LHe dewar filling procedures.
+
+\subsubsection{Closed toed shoes}
+The general FEL safety regulations preclude anyone from wearing open toed shoes in controlled areas.  Still, there are areas outside the radiation perimeter where cryogens may be handled (e.g., the supply dewar just outside the bay doors), and closed toed shoes must be worn when handling \lnn{} or LHe vessels.
+ 
+\subsection{Cryogenic Explosions}
+The principle hazard of handling cryogens is an explosion caused by an enclosed volume of liquid warming up without adequate pressure relief for the evaporated gas.  For this reason, every container that holds cryogenic liquid has a pressure relief valve, and most large dewars have a non-configurable, one time use emergency burst disk.  
+
+
+An important exception to the emergency relief rule is the \het{} circuit in the dilution refrigerator and pumping system.  Due to the scarcity and cost of \het, it is unacceptable to install pressure relief valves venting to atmosphere.  Instead, a single internal pressure relief valve, which opens at about 1.2 bar, is installed on the \het gas rack and should open if the pressure in the circuit rises due to a plug.  The pressure relief valve can only open if the valves leading to the fridge (via the condensor and still lines) are opened in the appropriate configuration.  Failure to do this could lead to catastrophic damage to the pumping system or, worse yet, the refrigerator itself.  
+
+\subsubsection{Three valves rule}
+
+The 500LD, 100LD and most supply helium dewars have three pathways for helium to escape in addition to the burst disk.  The three pathways are:
+\begin{enumerate}
+\item the pressurization port, where external gas is applied to the dewar
+\item an emergency relief valve, usually set around 2-4 PSI
+\item the inlet/outlet pathways where transfer lines connect through the top of the dewar 
+\end{enumerate}
+
+In general, all three of these ports may have manual valves to prevent helium from flowing through them.  For example, at the end of a 500LD fill, we close the outlet port on the filling dewar to halt the transfer, and the emergency relief valve is already closed to maintain liquid flow to the 500LD (see TODO 500LD fill procedure).  The pressurization valve is always closed unless specifically venting the dewar or actively applying pressure to it.  The three valves rule is
+
+\fbox{\parbox{.93\textwidth}{\centering
+\textbf{At least one of the three pathways on a cryogenic vessel must be open at all times.}
+}}
+
+If all three pathways are closed simultaneously, the radiative heat load (present in all dewars) will warm up the trapped liquid, increasing the pressure on the dewar until the burst disk breaks.  If for whatever reason the emergency burst disk fails, the resulting pressure will lead to an enormous explosion, easily fatal to any personnel nearby \cite{lnexplosion}. 
+
+\subsection{Cryogenic Burns}
+Cryogenic burns may happen by physically touching a liquid cryogen or cold gas plume, touching a bulk mass that was recently cooled by cryogenic liquid, or inhaling cold gas.  Use cryogenic gloves whenever handling liquid cryogens or surfaces they have recently cooled (like transfer lines), and always wear closed toed shoes in the lab. TODO: contact Rita Oakes, 919-684-3136 (press 2), for what to do in event of a burn
+
+\section{Oxygen Depravation}
+\section{High Voltage Safety}
+\section{Gravity Safety}
+\section{Hot Surface Safety}
+\section{Chemical Safety}
+\subsection{Heavy elements}
+\subsubsection{Indium}
+Indium is used for sealing two interfacing sets of flanges in the dilution refrigerator.  Disassembling the refrigerator necessarily entails scraping indium off these flanges, and assembling the fridge requires cutting and setting the seal from a roll of indium wire.
+
+While no cases of indium poisoning by oral consumption have been recorded, it remains a heavy element and toxic to humans if it enters the blood stream.  As a precaution, wearing latex gloves is recommended while handling indium, and hands should be washed immediately after, especially before taking a lunch break or leaving for the day.
+
+\subsubsection{Lead}
+Lead is a toxic metal often used in the laboratory due to its density and availability.  Inorganic lead is not readily absorbed through the skin, but once it enters the body (through ingestion or inhalation) it is carried by the bloodstream to the ``bone, teeth, liver, lungs, kidneys, brain and spleen'' in high concentrations \cite{aafp98}.  Children and pregnant women are particularly at risk to damage from lead poisoning \cite{epa13}
+
+
+Lead bricks are used at the University of Virginia PTGroup lab to counter the weight of the fridge on the stand.  Lead bricks are also present at HIGS around the beam line and UTR, although they are not usually found in the Vault.  Work gloves and hard-toed shoes are recommended when carrying or lifting lead bricks.  Any skin that was exposed to lead bricks or lead dust should be washed immediately after performing duties requiring lead exposure.
+
+\subsection{Isopropyl Alcohol}
+Isopropyl alcohol is used to clean the indium and KF-oring surfaces on the fridge and in the pumping system.  It is generally safe to be exposed to, but if there is a large quantity in an open container (like a bath for soaking vacuum parts) make sure the area is well ventilated and anyone working nearby knows about it.  Symptoms of isopropyl alcohol inhalation are dizziness, drowsiness and headache, and may cause unconsciousness \cite{isopropmsds}. 
+
+Isopropyl alcohol has a flash point (the lowest temperature it emits ignitable fumes) of 53$^\circ$ F, and care should be taken not to expose alcohol bottles to open flames.
