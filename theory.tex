@@ -18,10 +18,26 @@ Dynamic Nuclear Polarization (DNP) is a process of using microwave radiation to 
 \end{figure}
 
 
-The microwave frequency used can be 
+The microwave frequency can either be the sum of the proton and electron splitting frequency or the difference, depending on whether the nucleons are to be aligned with or against the magnetic field. 
 \section{NMR}
+
+Nuclear Magnetic Resonance (NMR) is the method we use to measure the polarization of the target material.  Essentially, a coil in the immediate vicinity of the target acts as the inductor in an LCR circuit, the inductance of which changes as a function of the magnetic susceptibility of the nuclei in the coil.  Since the magnetic susceptibility and polarization are related, the resonance frequency of the LCR circuit tell us information about the polarization of the target material\cite{qmeterbook}. 
 
 \section{Frozen Spin} 
  
-\section{Dilution Refrigerator} 
+ The target is polarized in a 2.5 T field, called the polarizing field.  The target will lose all polarization in an environment free of magnetic field.  However, the detector cannot fit around the polarizing magnet, and the polarizing magnet would obstruct outcoming neutrons, anway).  To maintain polarization while the target is in the detector, an internal 0.5 T field is turned on inside the fridge and the polarizing magnetic is wound down and removed.  The 0.5 field, called the holding field, sufficiently maintains polarization of nucleons while the detector is moved aroud the target and data is taken.
 
+\section{Dilution Refrigerator} 
+Since the polarization goes like the inverse of temperature, colder environments make for better polarized targets.  In our case, we use a dilution refrigerator, one that mixes the two isotopes \het{} and \hef{} for cooling, to reach target temperatures below 0.1 K.
+
+
+The dilution refrigerator principle relies on the splitting of a \het/\hef{} mixture into two distinct phases, a \het{} concentrated phase and a \het{} dilute phase.  The area labeled ``Two-phase region'' in Figure \ref{fig:dilutiondiagram} illustrates which mixtures, characterized by \het{} concentration, are inaccessible at which temperatures.  Since two distinct phases in thermal contact are always in or striving for thermodynamic equilibrium, changing the concentration of the dilute phase (by pumping \het{} out of it) will cause atoms from the concentrated phase to cross the phase boundary to restore balance.  Since the heat change of mixing (enthalpy difference between the dilute phase and concentrated phase) is positive, the \het{} crossing the phase boundary must absorb energy from the surrounding environment, which it does in the form of heat.\cite{hocktechniques}
+
+\begin{figure}
+ \centering
+ \includegraphics[scale=.45]{img/dilutiondiagram.png}
+ % dilutiondiagram.png: 715x727 pixel, 72dpi, 25.22x25.64 cm, bb=0 0 715 727
+ \caption{The famous diagram that shows the splitting of two distinct phases of $\het$-$\hef$ mixture. \cite{dilutiondiagram}}
+ \label{fig:dilutiondiagram}
+\end{figure}
+ 
