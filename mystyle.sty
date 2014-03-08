@@ -5,3 +5,12 @@
 \newcommand{\inches}{\ensuremath{^{\prime\prime}}}
 \newcommand{\com}[1]{\textit{#1\circledR}}
 \newcommand{\half}{\nicefrac{1}{2}}
+
+%http://tex.stackexchange.com/questions/162300/how-i-set-the-space-between-a-fbox-and-the-paragraphs-above-and-below-the-fbox
+\newcommand*{\vsepfbox}[1]{%
+  \begingroup
+    \sbox0{\fbox{#1}}%
+    \setlength{\fboxrule}{0pt}%
+    \mbox{\kern-\fboxsep\fbox{\unhbox0}\kern-\fboxsep}%
+  \endgroup
+}
