@@ -1,15 +1,83 @@
 \chapter{Procedures} 
 \label{procedures}  
 \section{Evacuating Transfer lines}
-Helium transfer lines (TLs) are vacuum insulated tubes.  Typically, one end is plunged directly into a helium dewar while the other plugs into the vessel that receives liquid helium, with a pressure differential driving the helium through.  If the vacuum jacket is compromised, the helium will cool the outer shell of the TL and frost up (helium will of course stop transferring).  Once this happens, the only solution is to remove and warm up the transfer line and evacuate the vacuum space.
+Helium transfer lines (TLs) are vacuum insulated tubes.  One end is plunged directly into a helium dewar while the other delivers liquid helium to a vessel, with a pressure differential driving the helium through.  If the vacuum jacket is compromised, the helium will cool the outer shell of the TL and frost up (helium will of course stop transferring).  Once this happens, the only solution is to remove and warm up the transfer line and evacuate the vacuum space.
 
 
-TLs are evacuated with a leak checker until the leak rate plateaus.  Generally, this takes three hours (depending on the leak checker and TL), but if time permits there is no harm in letting it pump overnight.  In theory, an evacuated TL will be fine for months, but in practice it is safer to pump down each TL at the beginning of a cooldown in case the vacuum space was somehow compromised in storage/transport.
+TLs are evacuated with a leak checker until the leak rate plateaus.  It is recommended to pump overnight, but in a bind it can be done quicker.  An evacuated TL will be fine for months, but in practice it is safer to pump down each TL a few days before beginning a cooldown in case the vacuum space was somehow compromised in storage/transport.
 
 
 \subsection{Cryofab TLs}
 
+
 \subsection{LTL}
+
+The LTL, named because it is the shape of a rigid capital ``L'', was designed at CERN for our fridge.  It did not come with a vacuum pump out adapter, so we made one by modeling the brass screw that plugs the pump port.
+
+\begin{figure}
+\begin{minipage}{.45\linewidth}
+ \centering
+ \includegraphics[width=\linewidth]{img/ltl-adapter.jpg}
+ % ltl-adapter.jpg: 508x559 pixel, 762dpi, 1.69x1.86 cm, bb=0 0 48 53
+ \caption{The LTL adapter.}
+ \label{fig:ltl-adapter}
+\end{minipage}
+\quad
+\begin{minipage}{.45\linewidth}
+ \includegraphics[width=\linewidth]{img/ltl.jpg}
+ % ltl.jpg: 851x573 pixel, 762dpi, 2.84x1.91 cm, bb=0 0 80 54
+ \caption{The LTL.}
+ \label{fig:ltl}
+\end{minipage}
+\end{figure}
+
+\begin{minipage}{\linewidth}
+Gather the following:
+
+\begin{itemize}
+ \item LTL
+\item KF adapter to LTL
+\item teflon tape
+\item flathead screwdriver
+\item leak detector (LD) with KF25 oring/clamp
+\item ziplock bag
+\end{itemize}
+\end{minipage}
+
+
+\begin{enumerate}
+ \item Warm up the LD.
+\item Wrap the KF adapter's threads with one or two layers of teflon tape.  Do not block the tapered end with tape or it might ruin the seal.
+\item Remove the top screw from the LTL and place it in the ziplock bag.
+\item Open side screw valve 3 turns to break the vacuum.  If there is a hiss, the LTL was holding a vacuum.
+\item Hand tighten the adapter in the top hole while being careful not to let the emergency popoff valve fall out.  It might be tricky to get the threads right with the tape between them, but do not strip the threads!
+\item Start pumping with the LD.  The leak rate should should very quickly approach 10E-8.
+\item After a few minutes of pumping, spray the KF and threaded joints with He gas to make sure the connection is leak tight.  If the threaded joint is leaking, \textbf{carefully} rotate the LTL \nicefrac{1}{8} of a turn, up to \nicefrac{1}{4} turn max.  If the joint is still leaking, the teflon tape will have to be removed and reapplied.
+\item Pump overnight.
+\item Close side screw valve and tighten.
+\item Stop and vent LC and break the KF connection.
+\item Unscrew the LTL adapter, making sure there is no teflon left over in the LTL port, and screw the brass top screw back in place.
+\item Remove all teflon tape from the adapter.
+\end{enumerate}
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=.80\linewidth]{img/ltl-ports.jpg}
+ % ltl-ports.jpg: 1026x720 pixel, 72dpi, 36.19x25.40 cm, bb=0 0 1026 720
+ \caption{The three ports on the LTL: A) emergency relief popoff (this will shoot very high when the LTL freezes!), B) vacuum jacket pump port and brass placeholder screw, C) side screw valve.}
+ \label{fig:ltl-ports}
+\end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=.8\linewidth]{img/ltl-pumping.jpg}
+ % ltl-pumping.jpg: 3072x2304 pixel, 72dpi, 108.37x81.28 cm, bb=0 0 3072 2304
+ \caption{Pumping down the LTL.  The side screw valve is opened to allow the LD to pump the vacuum jacket.}
+ \label{fig:ltl-pumping}
+\end{figure}
+
+
 
 \section{Indium Extrusion}
 Hifrost requires indium wire precisely 1 mm in diameter for making MC and IVC seals.  Indium seals must be scraped away after use, and the metal is always recovered (due to its scarcity).  The Indium Association of America charges roughly \$1000 for 13 feet, or about \$20-30 per attempted seal, so it is worth creating our own wire from the so-called ``scraps''.
