@@ -338,6 +338,46 @@ The vacuum grease feels unpleasant on hands, so latex gloves may be used.  Other
 
 \section{Vacuum Rise Testing}
 
+A leak checker is the proper way to determine if a vacuum volume is leak tight.  However, it is not always practical and sometimes very difficult to leak check a large volume, so we use a vacuum rise test as a course characterization of the vacuum fidelity.
+
+
+The concept is to pull a vacuum down in a volume, isolate it from the pump, then watch if the vacuum rises.  Outgassing and a leak are generally the only two effects we will see, but outgassing usually stops the pressure rise far below 1 atm.
+
+To set up, gather the following:
+\begin{itemize}
+ \item pump 
+ \item associated KF vacuum fittings/hoses
+ \item KF pressure gauge
+\end{itemize}
+
+
+\begin{figure}[h]
+ \centering
+ \begin{minipage}{.45\textwidth}
+ \includegraphics[width=\textwidth]{./img/vacuum-rise-system.png}
+ \caption{Vacuum rise schematic: \textit{s} is the system to check; \textit{g} is a pressure gauge; \textit{}v is a leak-tight manual valve; \textit{p} pumps to atmosphere.}
+ \label{fig:vacuum-rise-system}
+ \end{minipage}
+ \quad
+ \begin{minipage}{.45\textwidth}
+ \includegraphics[width=\textwidth]{./img/vacuum-rise-dual-system.png}
+ \caption{The same as Figure \ref{fig:vacuum-rise-system} except \textit{s} has two ports, the inlet and exhaust of a pump, in this case.}
+ \label{fig:vacuum-rise-dual-system}
+ \end{minipage}
+\end{figure}
+
+The procedure is
+\begin{enumerate}
+ \item Set up as shown in Figure \ref{fig:vacuum-rise-system} or Figure \ref{fig:vacuum-rise-dual-system}.  If the system is powered (such as a pump), make sure it is unplugged.
+ \item Open \textit{v} and pump down \textit{s} until the pressure gauge \textit{g} stops decreasing.
+ \item Close \textit{v} and turn off \textit{p}.
+ \item Monitor \textit{g} until it stops rising.  This can take from minutes to days.
+\end{enumerate}
+
+If the system \textit{s} is tight it will outgas to tens of mbar (depending on if it is contaminated with oil, water, etc) then stop.  If it is necessary (and possible), \textit{s} should then be checked with a leak detector to verify it is helium tight.
+
+If the pressure gauge reaches an atmosphere, there is a leak in \textit{s}.  The time this takes determines how big the leak is.  A quick way to verify \textit{s} contains the leak is replacing it with a blank off and repeating the vacuum rise test.  If \textit{g} reaches an atmosphere again, there is a leak in the plumbing which should be repaired before trying the vacuum test again.
+
 \section{Stripping Fridge}
 
 \section{Assembling Fridge}
