@@ -10,6 +10,11 @@
 \usepackage{units}%for text like 1/2
 \usepackage{blindtext}
 \usepackage[english]{babel}
+\usepackage{pdfpages}
+\usepackage[titletoc]{appendix}
+
+%\usepackage{hyperref} %god these hyperlinks are ugly
+
 %when you need to change margin sizes for temp reasons, just do it for the whole doc then change it back
 %http://kb.mit.edu/confluence/pages/viewpage.action?pageId=3907057
 %\usepackage[margin=1.3in]{geometry}
@@ -23,6 +28,7 @@
 \frontmatter 
 \tableofcontents 
 
+
 \mainmatter 
 %\include{history}
 \include{theory}
@@ -32,7 +38,21 @@
 \include{procedures} 
 
 
+
+%-----appendices
+\begin{appendices}
+\noappendicestocpagenum
+\addappheadtotoc
+\chapter{Checklist for cooldown}
+%-----appendices
+\appendix
+\label{appendix}
+\includepdf[pages={1}]{docs/cooldown-checklist.pdf}
+\end{appendices}
+
 \backmatter 
+
+
 %\include{glossary} 
 %\include{notat} 
 \bibliographystyle{amsalpha} %The style you want to use for references. 
