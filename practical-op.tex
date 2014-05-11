@@ -10,7 +10,8 @@
 
 \section{Cooldown}
 \subsection{Prep}
-Before LHe is ordered, the system must be verified to be in working order.  Go down the checklist found in Appendix \ref{appendix}, reporting any issues to the senior cooldown scientist.
+\label{practical-op:prep}
+Go down the checklist found in Appendix \ref{appendix}, reporting any issues to the senior cooldown scientist.
 
 \textbf{This step is not optional}: the rest of this operational procedure assumes all prep work is successfully completed and equipment bugs are worked out.  See walkthroughs for specifics tasks in Chapter \ref{procedures}.
 
@@ -66,7 +67,49 @@ The 100LD has an entrance port, a main flow port, an exhaust port and a pressure
 
 \subsubsection{100LD Fill During Run}
 
+\begin{enumerate}
+ 
+ \item Verify the 500LD is full enough to top off the 100LD.  If not see above 500LD fill procedure.
+ \item Set the regulator on the helium pressurization cylinder to 2 PSI.
+ \item Open the 100LD exhaust valve and make sure the exhaust port is safely facing the center of the room.
+ \item Hook up the pressurization line to the 500LD pressurization port using the procedure in Section \ref{procedure:attach-pressurization-line}.
+ \item Open the main flow valve on the 500TL, then close the 500LD pressure relief valve.
+ \item Open the 500LD pressurization valve.
+ \item Verify the 100LD Goddard Fittings are not leaking gas.  If they do, remove the pressurization from the 500LD and close the 500TL main flow valve immediately.  Consult a high ranking lab official.
+ \item When the 100LD is full, remove the pressurization from the 500LD, open the 500LD pressure relief valve and close the 500TL main flow valve.
+ 
+\end{enumerate}
+
+
 \subsection{Cool \hef{} Section}
+
+When the 100LD is full, the fridge has been backfilled with helium gas and the rest of the system is ready for a cooldown, the LTL is inserted into the 100LD and fridge.  The separator pumps on the fridge are started and the pressure difference is enough to pull helium from the 100LD (no dewar pressurization needed).
+
+The LHe travels through the LTL into the separator, which collects liquid while rejecting gas.  The gas is pulled out through two lines, the ``separator'' line which precools the \het{} inlet, and the shield line which provides a heat shink for the radiation shield.
+
+When the separator is full, control valve 1 (CV1) allows helium to flow to the evaporator and control valve 2 (CV2) directs LHe to the holding magnet and IVC can.  CV2 is also used to quickly cool the MC when target material is at risk of thermal damaged.
+
+The evaporator can hold LHe at 4K, but evaporator pumps are run to lower the helium vapor pressure and lower the temperature down to a minimum of about 1K.
+
+\subsubsection{Insert LTL}
+\begin{enumerate}
+ \item See Section \ref{practical-op:prep} to make sure the fridge is ready to take LHe.
+ \item Check the 100LD level probe and top off if necessary (see directions above).
+ \item Blow out LTL with helium gas.
+ \item Make sure 100LD can roll out from under the fridge stand area (so the LTL can be inserted), back under the fridge stand area, and then up to the fridge.  The IVC pump cart may have to be shifted around.
+ \item Put 4 PSI on the fridge via the following steps: adjust the helium gas regulator to 4 PSI, open the valves between the regulator and the separator manifold, close all other separator manifold valves (so gas does not flow to separator pumps).
+ \item Remove the LHe inlet bung and KF clamp from the fridge and verify the positive pressure from the separator.
+ \item Stop purging LTL with gas and place a rubber in the fridge side.
+ \item Remove bung from 100LD main flow port and slowly insert the LTL until it lines up with the fridge.
+ \item Roll the 100LD in place under the fridge stand.
+ \item Remove the LTL bung and wait for the gas plume to look like a blue torch flame, then roll the 100LD towards the fridge until the LTL is fully inserted and tighten the KF clamp around the LTL-fridge inlet joint.
+ \item Open CV1 and CV2 about 2 turns each.
+ \item Immediately turn off the pressurization from the helium cylinder and turn on the separator pumps.  Open all valves between the separator pumps and the fridge, including bypass valves.  Pump on shield at max flow for 30 minutes and separator for 15 minutes\cite{tapio-cooldown-procedure}.
+ \item Separator flow is only kept high when there is no liquid in the separator yet; thereafter control the shield flow keeping it below 20 mmol/s and reduce the separator flow to 5 mmol/s (see Appendex \ref{appendix:slpm-conversion} for flow conversion).  TODO manually convert to SLPM
+ \item TODO Cooldown diverges from June 2014 cooldown at this point; consider separate document
+\end{enumerate}
+
+
 \subsection{Cool \het{} Section}
 \subsection{Dilution}
 
