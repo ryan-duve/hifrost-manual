@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=practical-op.tex
+lastDocument=title-page.tex
 masterDocument=hifrost.tex
 name=hifrost-manual
 pkg_extIsRegExp=false
@@ -104,6 +104,13 @@ Highlighting=LaTeX
 Indentation Mode=normal
 Mode=LaTeX
 
+[document-settings,item:subsystems.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [document-settings,item:theory.tex]
 Bookmarks=
 Encoding=UTF-8
@@ -124,20 +131,20 @@ Mode=LaTeX
 
 [item:appendices.tex]
 archive=true
-column=6
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=42
+line=0
 mode=LaTeX
 open=true
 order=11
 
 [item:hardware.tex]
 archive=true
-column=0
+column=19
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=6
 mode=LaTeX
 open=true
 order=3
@@ -154,10 +161,10 @@ order=-1
 
 [item:hifrost.tex]
 archive=true
-column=0
+column=31
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=13
 mode=LaTeX
 open=true
 order=0
@@ -195,6 +202,16 @@ order=-1
 [item:img/duke-logo.png]
 archive=true
 column=176362104
+encoding=
+highlight=
+line=0
+mode=
+open=false
+order=-1
+
+[item:img/intro-image.jpg]
+archive=true
+column=0
 encoding=
 highlight=
 line=0
@@ -262,6 +279,26 @@ mode=
 open=false
 order=-1
 
+[item:img/subsystem-thermistor-photos.png]
+archive=true
+column=7353792
+encoding=
+highlight=
+line=0
+mode=
+open=false
+order=-1
+
+[item:img/subsystem-thermistor-schematic.png]
+archive=true
+column=2
+encoding=
+highlight=
+line=0
+mode=
+open=false
+order=-1
+
 [item:mystyle.sty]
 archive=true
 column=0
@@ -284,10 +321,10 @@ order=1
 
 [item:preface.tex]
 archive=true
-column=0
+column=41
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=16
 mode=LaTeX
 open=true
 order=2
@@ -322,6 +359,16 @@ mode=LaTeX
 open=true
 order=8
 
+[item:subsystems.tex]
+archive=true
+column=54
+encoding=UTF-8
+highlight=LaTeX
+line=25
+mode=LaTeX
+open=true
+order=12
+
 [item:theory.tex]
 archive=true
 column=26
@@ -334,31 +381,31 @@ order=10
 
 [item:title-page.tex]
 archive=true
-column=0
+column=45
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=14
 mode=LaTeX
 open=true
 order=6
 
 [view-settings,view=0,item:appendices.tex]
-CursorColumn=6
-CursorLine=42
+CursorColumn=0
+CursorLine=0
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:hardware.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=19
+CursorLine=6
 JumpList=
-ViMarks=
+ViMarks=.,2,86,[,2,73,],2,86
 
 [view-settings,view=0,item:hifrost.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=31
+CursorLine=13
 JumpList=
-ViMarks=
+ViMarks=.,13,31,[,13,31,],13,31
 
 [view-settings,view=0,item:history.tex]
 CursorColumn=0
@@ -379,10 +426,10 @@ JumpList=
 ViMarks=.,108,17,[,108,7,],108,17
 
 [view-settings,view=0,item:preface.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=41
+CursorLine=16
 JumpList=
-ViMarks=
+ViMarks=.,16,40,[,16,35,],16,40
 
 [view-settings,view=0,item:procedures.tex]
 CursorColumn=15
@@ -402,6 +449,12 @@ CursorLine=50
 JumpList=
 ViMarks=.,44,230,[,44,223,],44,230
 
+[view-settings,view=0,item:subsystems.tex]
+CursorColumn=54
+CursorLine=25
+JumpList=
+ViMarks=.,21,59,[,21,59,],21,59
+
 [view-settings,view=0,item:theory.tex]
 CursorColumn=26
 CursorLine=20
@@ -409,7 +462,7 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:title-page.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=45
+CursorLine=14
 JumpList=
-ViMarks=
+ViMarks=.,14,0,[,14,0,],14,0
