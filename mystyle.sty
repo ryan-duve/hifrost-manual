@@ -14,3 +14,19 @@
     \mbox{\kern-\fboxsep\fbox{\unhbox0}\kern-\fboxsep}%
   \endgroup
 }
+
+%http://tex.stackexchange.com/questions/58752/how-do-i-generate-a-check-list#answer-58756
+\newenvironment{checklist}{%
+  \footnotesize
+  \begin{list}{}{}% whatever you want the list to be
+  
+  %http://stackoverflow.com/questions/3275622/latex-remove-spaces-between-items-in-list#3275668
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  
+  \let\olditem\item
+  \renewcommand\item{{\olditem $\Box$} }
+}{%
+  \end{list}
+}   
