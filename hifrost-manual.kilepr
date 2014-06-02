@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=procedures.tex
+lastDocument=practical-op.tex
 masterDocument=hifrost.tex
 name=hifrost-manual
 pkg_extIsRegExp=false
@@ -131,10 +131,10 @@ Mode=LaTeX
 
 [item:appendices.tex]
 archive=true
-column=266
+column=7
 encoding=UTF-8
 highlight=LaTeX
-line=11
+line=72
 mode=LaTeX
 open=true
 order=11
@@ -202,6 +202,16 @@ order=-1
 [item:img/500TL-drawing.png]
 archive=true
 column=180495648
+encoding=
+highlight=
+line=0
+mode=
+open=false
+order=-1
+
+[item:img/cryo-schematic-all.png]
+archive=true
+column=0
 encoding=
 highlight=
 line=0
@@ -341,10 +351,10 @@ order=5
 
 [item:practical-op.tex]
 archive=true
-column=7
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=1
+line=33
 mode=LaTeX
 open=true
 order=1
@@ -361,10 +371,10 @@ order=2
 
 [item:procedures.tex]
 archive=true
-column=8
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=426
+line=430
 mode=LaTeX
 open=true
 order=4
@@ -420,10 +430,10 @@ open=true
 order=6
 
 [view-settings,view=0,item:appendices.tex]
-CursorColumn=266
-CursorLine=11
+CursorColumn=7
+CursorLine=72
 JumpList=
-ViMarks=.,11,250,[,11,241,],11,250
+ViMarks=.,72,0,[,72,0,],72,0
 
 [view-settings,view=0,item:hardware.tex]
 CursorColumn=27
@@ -450,10 +460,10 @@ JumpList=
 ViMarks=.,5,32,[,5,32,],5,44
 
 [view-settings,view=0,item:practical-op.tex]
-CursorColumn=7
-CursorLine=1
+CursorColumn=0
+CursorLine=33
 JumpList=
-ViMarks=.,1,26,[,1,7,],1,26
+ViMarks=.,32,0,[,21,0,],-1,-1
 
 [view-settings,view=0,item:preface.tex]
 CursorColumn=41
@@ -462,8 +472,8 @@ JumpList=
 ViMarks=.,16,40,[,16,35,],16,40
 
 [view-settings,view=0,item:procedures.tex]
-CursorColumn=8
-CursorLine=426
+CursorColumn=0
+CursorLine=430
 JumpList=
 ViMarks=.,486,36,[,486,29,],486,36
 
