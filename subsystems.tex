@@ -37,7 +37,31 @@ The 6 photos, Figure \ref{fig:subsystem-thermistor-photos}, show the front and b
 \end{figure}
 
 \section{IVC Manifold}
-TODO: purpose of the IVC manifold, schematic diagram, instructions for turning on vacuum pump
+The IVC manifold, see diagram on Figure \ref{fig:ivc-manifold-diagram}, connects the turbo pump to the IVC connector on the fridge, allows flow of helium gas during MC cooling, and hosts the Pirani pressure gauge.
+
+\begin{figure}[htbp!]
+ \centering
+ \includegraphics[width=.5\textwidth]{./img/ivc-manifold-diagram.jpg}
+ % ivc-manifold-diagram.jpg: 0x0 pixel, 0dpi, 0.00x0.00 cm, bb=
+ \caption{The IVC turbo and mechanical pumps evacuate the manifold and IVC line.  The gas line is used to backfill the IVC to about 40 mbar, measured with the pressure gauge, of exchange gas during cooling.}
+ \label{fig:ivc-manifold-diagram}
+\end{figure}
+
+The pump cart the IVC sits on is powered by first plugging in the turbo pump fan, then plugging in the turbo pump controller, and finally, plugging in the mechanical pump, which automatically starts it up.
 
 \section{OVC Manifold}
-TODO: purpose of the OVC manifold, diagram, photos, HiCube information
+The OVC manifold is simply a valve on top of a turbo pump that connects to the OVC pump out ports on the fridge.  Between the fridge and the valve is a tee with a cold cathode pressure gauge.  See Figure \ref{fig:ovc-manifold-diagram}.
+
+
+
+The green button on the front of the HiCube powers on the controller, and then the power button the front panel starts the pump.  Make sure the ballast valve in the back is closed before pumping.  If the turbo stalls before reaching 1500 Hz, slowly wind down the pump, blank it off, and try again.  Power cycle as a last resort.
+
+\begin{figure}[htbp!]
+ \centering
+ \includegraphics[width=.5\textwidth]{./img/ovc-manifold-diagram.jpg}
+ % ovc-manifold-diagram.jpg: 0x0 pixel, 0dpi, 0.00x0.00 cm, bb=
+ \caption{The OVC pump is a Pfeiffer HiCube station, and the pressure gauge is a Pfeiffer IKR 251 cold cathode gauge.}
+ \label{fig:ovc-manifold-diagram}
+ 
+ 
+\end{figure}
