@@ -257,11 +257,23 @@ The evaporator can hold LHe at 4K, but evaporator pumps are run to lower the hel
  \item Remove the LTL bung and wait for the gas plume to look like a blue torch flame, then roll the 100LD towards the fridge until the LTL is fully inserted and tighten the KF clamp around the LTL-fridge inlet joint.
  \end{enumerate}
  
+ \subsection{Cool Separator}
  \begin{enumerate}
  \item Open CV1 and CV2 about 2 turns each.
  \item Immediately turn off the pressurization from the helium cylinder and turn on the separator pumps.  Open all valves between the separator pumps and the fridge, including bypass valves.  Pump on shield at max flow for 30 minutes and separator for 15 minutes\cite{tapio-cooldown-procedure}.
- \item Separator flow is only kept high when there is no liquid in the separator yet; thereafter control the shield flow keeping it below 20 mmol/s and reduce the separator flow to 5 mmol/s (see Appendex \ref{appendix:slpm-conversion} for flow conversion). 
- \item TODO Cooldown diverges from June 2014 cooldown at this point; consider separate document
+ \item Separator flow is only kept high when there is no liquid in the separator yet; thereafter control the shield flow keeping it below 20 mmol/s and reduce the separator flow to 5 mmol/s (see Appendex \ref{appendix:slpm-conversion} for flow conversion).   Normal shield flow is 5 mmol/s in equilibrium (a few hours after cooling).
+ \item The \het{} system should be purged.  Close any valves open to the circulation ring (thus making it hermetic) and turn on 2063H1 and open MV1a to pump on the fridge.  
+ \item Open a large vessel of mash (or \hef{}, for commissioning runs) and bring the condensation line up to 1 bar.
+ \item Close the large vessel and watch the pressure of the condensation line.  The pressure should drop as the helium condenses.
+ \item When the separator is cold, open the bypass valve to cool the IVC.  Monitor the pressure on the evaporator pumps inlet.
+ \item Backfill the IVC with about 40 mbar of helium gas.
+ \item Slowly open CV1, keeping the evaporator pump inlet at 1 mar or lower.  Continue cooling the MC.
+ \item \het{} flow will be about 1 mbar/s.  If the pressure goes up, warm up the fridge and flush with dry helium gas.
+ \item When the MC reaches 30 K, stop separator flows, close both needle valves and pump exchange gas out of the IVC.  The IVC will be pumped on for the rest of the cooldown.  Monitor the IVC pressure gauge for signs of a leak in the MC.
+ \item After 15 minutes of IVC pumping, restart the separator flows and slowly open the needle valves (there is no rush to reach 1 K).  Monitor the pressure in the condensor line and add more gas if it gets below 500 mbar.  A sudden drop of pressure at the \het{} pump inlet indicates the helium has condensed in the heat exchanger of the evaporator.
+ \item Condense the rest of the mash from the \het{} vessel.  The MC will cool rapidly to 500 mK if there is 1\% \het{} in the mixture.
+ \item Put about 30 L \het{} gas into the circulation loop; a reasonable starting ratio is 260:30 L of \hef:\het.
+ 
 \end{enumerate}
 
 

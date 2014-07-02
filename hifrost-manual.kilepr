@@ -481,10 +481,10 @@ order=8
 
 [item:subsystems.tex]
 archive=true
-column=119
+column=60
 encoding=UTF-8
 highlight=LaTeX
-line=19
+line=5
 mode=LaTeX
 open=true
 order=12
@@ -570,8 +570,8 @@ JumpList=
 ViMarks=.,133,12,[,133,12,],133,25
 
 [view-settings,view=0,item:subsystems.tex]
-CursorColumn=119
-CursorLine=19
+CursorColumn=60
+CursorLine=5
 JumpList=
 ViMarks=.,58,0,[,58,0,],58,0
 
