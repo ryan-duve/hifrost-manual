@@ -6,6 +6,9 @@ In the presence of a magnetic field, spin-\half{} nuclei tend to align themselve
 $$P=\frac{\uparrow-\downarrow}{\uparrow+\downarrow},$$
 
 where ($\downarrow$, $\uparrow$) is the population of nuclei with $m_z$=(-\half,\half).
+
+\subsection{Thermal Polarization Derivation}
+
  \subsection{DNP}
 Dynamic Nuclear Polarization (DNP) is a process of using microwave radiation to pump electron-proton pairs to higher energy (polarized) states.  The relaxation time for the electron is much shorter than that of the proton, so the proton remains polarized while the electron is able to be paired with other protons for polarization.
 
@@ -23,13 +26,26 @@ The microwave frequency can either be the sum of the proton and electron splitti
 
 Nuclear Magnetic Resonance (NMR) is the method we use to measure the polarization of the target material.  Essentially, a coil in the immediate vicinity of the target acts as the inductor in an LCR circuit, the inductance of which changes as a function of the magnetic susceptibility of the nuclei in the coil.  Since the magnetic susceptibility and polarization are related, the resonance frequency of the LCR circuit tell us information about the polarization of the target material\cite{qmeterbook}. 
 
+\subsection{Liverpool Q-Meter}
+
+\subsubsection{$\lambda$/2 Cable}
+
+\subsubsection{Diode Detector}
+
+\subsubsection{Phase Sensitive Detector and BRM}
+
+\subsection{PDP}
+
 \section{Frozen Spin} 
  
  The target is polarized in a 2.5 T field, called the polarizing field.  The target will lose all polarization in an environment free of magnetic field.  However, the detector cannot fit around the polarizing magnet, and the polarizing magnet would obstruct outcoming neutrons, anway).  To maintain polarization while the target is in the detector, an internal 0.5 T field is turned on inside the fridge and the polarizing magnetic is wound down and removed.  The 0.5 field, called the holding field, sufficiently maintains polarization of nucleons while the detector is moved aroud the target and data is taken.
 
-\section{Dilution Refrigerator} 
+\section{Refrigerator} 
 Since the polarization goes like the inverse of temperature, colder environments make for better polarized targets.  In our case, we use a dilution refrigerator, one that mixes the two isotopes \het{} and \hef{} for cooling, to reach target temperatures below 0.1 K.
 
+\subsection{\hef{}Cooling (Evaporator and Separator)}
+
+\subsection{Dilution}
 
 The dilution refrigerator principle relies on the splitting of a \het/\hef{} mixture into two distinct phases, a \het{} concentrated phase and a \het{} dilute phase.  The area labeled ``Two-phase region'' in Figure \ref{fig:dilutiondiagram} illustrates which mixtures, characterized by \het{} concentration, are inaccessible at which temperatures.  Since two distinct phases in thermal contact are always in or striving for thermodynamic equilibrium, changing the concentration of the dilute phase (by pumping \het{} out of it) will cause atoms from the concentrated phase to cross the phase boundary to restore balance.  Since the heat change of mixing (enthalpy difference between the dilute phase and concentrated phase) is positive, the \het{} crossing the phase boundary must absorb energy from the surrounding environment, which it does in the form of heat.\cite{hocktechniques}
 
