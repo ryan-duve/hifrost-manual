@@ -2,7 +2,8 @@
 \begin{appendices}
 \noappendicestocpagenum
 \addappheadtotoc
-\chapter{Checklist for cooldown}
+\pagebreak
+\chapter{LHe Order Requirement Checklist}
 %-----appendices
 \label{appendix:checklist-for-cooldown}
 
@@ -12,33 +13,63 @@
 \end{tabular}
 
 \begin{minipage}{\textwidth}
-\paragraph{Pump station area - \hef}
+\paragraph{LHe transfer}
 \begin{checklist}
- \item flow meters on and working
- \item \{$\Box$ \sout{UTL}, $\Box$ 500TL, $\Box$ WTL, $\Box$ MTL, $\Box$ 100TL, $\Box$ LTL\} pumped down
- \item \{$\Box$ 250LD, $\Box$ 500LD\} Goddard fittings assembled and ready
- %\item 500LD level probe/monitor plugged in and powered on
- %\item helium gas cylinder hooked up to 500LD
- \item at least one full backup helium cylinder nearby
+ \item \{$\Box$ 500TL, $\Box$ LTL\} pumped down
+ \item delivery dewar Goddard fittings assembled and ready
+ \item two helium cylinders by gas manifold (one is full)
+ \item dewar pressurization line is ready
+ \item number of additional He cylinders on hand: \blankprompt
  \item dewar scale and weight record form is ready
- \item system is purged and backfilled with helium gas
- \item 500LD is bunged in both LHe inlet and outlet ports
- \item all pump oil view ports half full
+ \item LHe thumper or probe/readout are ready
  \item heat gun is plugged in and reaches dewar
+ \item cryo safety equipment is ready for LHe transfer
+ \item walkie talkies charged
+ \item 100TL installed in 100LD; bayonet attached to WTL
+
+\end{checklist}
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\paragraph{Fridge}
+\begin{checklist}
+ \item target material installed: \blankprompt
+ \item MC spacer/dam installed
+ \item MC Si room temp: \blankprompt
+ \item AVS-47 room temp: Ch 0: \blankprompt, Ch 1: \blankprompt , Ch 2: \blankprompt  
+ \item leak check MC indium seal \blankprompt mbar l/s
+ \item \het{} circ loop VRT: \blankprompt mbar/day
+ \item leak check IVC indium seal: \blankprompt mbar l/s
+ \item leak check OVC: \blankprompt mbar l/s
+ \item align fridge with beamline
+ \item flow impedance through fridge observed
+ \item \hef{} Lakeshore sensors read to computer
+
 \end{checklist}
 \end{minipage}
 
 \begin{minipage}{\textwidth}
 \paragraph{Pump station area - \het}
 \begin{checklist}
+ \item leak detector available
  \item \lnn{} trap regenerated
- \item \lnn{} trap filled
- \item Mash cleaned
- \item \het{} VRT: \makebox[1cm]{\hrulefill} mbar/day
- \item record \het{} tank pressures in log book (T$_1$, T$_2$, T$_3$)
+ \item \lnn{} trap dewar filled
+ \item mash cleaned
+ \item T$_1$: \blankprompt mbar, T$_2$: \blankprompt mbar, T$_3$: \blankprompt mbar
  \item flow meter on \het{} gas rack powered on and recording
- \item system is purged and backfilled with helium gas 
- \item mash is cleaned; system is set up for runtime cleaning
+ \item mash cleaning system is set up for runtime cleaning
+ \item all pump oil view ports half full
+\end{checklist}
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\paragraph{Pump station area - \hef}
+\begin{checklist}
+ \item \{$\Box$ sep, $\Box$ shield, $\Box$ evap\} flowmeters working
+ \item sep/shield purged \blankprompt{} times; backfilled with He gas
+ \item evap purged \blankprompt{} times; backfilled with He gas
+ \item all pump oil view ports half full
+ \item reading on 2000L \lnn{} tank: \blankprompt\%
 \end{checklist}
 \end{minipage}
 
@@ -46,30 +77,47 @@
 \paragraph{Gamma Vault}
 \begin{checklist}
  \item 100LD Goddard fittings assembled and installed on 100LD
- \item 100LD LHe inlet and outlet ports are bunged
  \item install exhaust tubing on 100LD and run over wall
- \item \{$\Box$ 100LD LHe, $\Box$ magnet \lnn, $\Box$ magnet LHe\} level sensors reading
- %\item fill \lnn{} in magnet space
- \item OVC assembled and pumped down to $\sim$1E-5 mbar %found tilde command from http://www.ctan.org/tex-archive/info/symbols/comprehensive/symbols-a4.pdf
- \item IVC manifold assembled and hooked up to fridge
- \item \het{} section is tight (requires temporary IVC seal)
- \item Lakeshore sensors read to computer
- \item AVS-47 bridge room temp: Ch 0: \makebox[1cm]{\hrulefill}, Ch 1: \makebox[1cm]{\hrulefill} , Ch 2: \makebox[1cm]{\hrulefill}  
- \item walkie talkies charged
- \item install the 100TL in the 100LD and attach the bayonet to the WTL
- \item fridge heating tapes and tested (geometrically and electronically)
+ \item 100LD LHe level probe readout reading to computer
+ \item OVC pressure: \blankprompt mbar
+ \item IVC pressure: \blankprompt mbar
+ \item fridge heating tapes installed
  \item heat gun is plugged in and reaches 100LD Goddards 
- \item heat gun is plugged in and reaches magnet Goddards
+\end{checklist}
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\paragraph{Polarizing magnet}
+\begin{checklist}
+\item Goddard fittings inspected/installed
+\item \lnn{} and LHe readouts working
+\item power suppy HP 6061A ready
+\item control programmer AMI 420 ready
+\item heat gun with extension cord set up on magnet
+\item cryo safety equipment placed on magnet stand
+\item magnet/detector carriage installed
+\end{checklist}
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\paragraph{Holding magnet}
+\begin{checklist}
+ \item resistance across holding magnet: \blankprompt $\Omega$
+ \item power supply AMI PS 12100 ready
+ \item control programmer AMI 420 ready
+ \item energy absorber AMI 601 ready
+ \item cable plugged into fridge
 \end{checklist}
 \end{minipage}
 
 \begin{minipage}{\textwidth}
 \paragraph{Microwaves}
 \begin{checklist}
- \item EIO water is running
+ \item EIO water is filled and flowing
  \item laptop webcam working
- \item microwaves tested with power meter
- \item wave guide is hooked up to fridge
+ \item microwaves tested with power meter: \blankprompt mW
+ \item microwave frequency tested: \blankprompt GHz
+ \item microwave guide connected to fridge
  \item thermistors and water flow readouts work and read to computer
 \end{checklist}
 \end{minipage}
@@ -77,9 +125,10 @@
 \begin{minipage}{\textwidth}
 \paragraph{NMR}
 \begin{checklist}
- \item signal acheived with oscillator crystal in mixing chamber coil
  \item NMR water is running
  \item PDP running
+ \item NMR is tuned
+ \item $\lambda$/2 cable reconnected after swing
 \end{checklist}
 \end{minipage}
 
