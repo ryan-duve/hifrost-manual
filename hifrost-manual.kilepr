@@ -451,10 +451,10 @@ order=2
 
 [item:procedures.tex]
 archive=true
-column=569
+column=322
 encoding=UTF-8
 highlight=LaTeX
-line=569
+line=571
 mode=LaTeX
 open=true
 order=4
@@ -552,10 +552,10 @@ JumpList=
 ViMarks=.,16,40,[,16,35,],16,40
 
 [view-settings,view=0,item:procedures.tex]
-CursorColumn=569
-CursorLine=569
+CursorColumn=322
+CursorLine=571
 JumpList=
-ViMarks=.,569,0,[,569,0,],569,0
+ViMarks=.,571,177,[,571,168,],571,177
 
 [view-settings,view=0,item:refs.bib]
 CursorColumn=121
