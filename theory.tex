@@ -3,11 +3,50 @@
 \section{Nuclear Polarization}
 In the presence of a magnetic field, spin-\half{} nuclei tend to align themselves along the axis of the field.  The polarization of the ensemble of particles is defined by 
 
-$$P=\frac{\uparrow-\downarrow}{\uparrow+\downarrow},$$
+\begin{eqnarray}
+\label{eqn:polarization-definition}
+\mathcal{P}=\frac{N_\uparrow-N_\downarrow}{N_\uparrow+N_\downarrow},
+\end{eqnarray}
 
-where ($\downarrow$, $\uparrow$) is the population of nuclei with $m_z$=(-\half,\half).
+where $N_\downarrow$ ($N_\uparrow$) is the population of spins with $m_z$ equal to $-$\half{} (+\half).  For simplicity, the remainder of the section assumes particles of spin-\half{}.
 
 \subsection{Thermal Polarization Derivation}
+
+
+A macroscopically sized target has $N$ particles, where $N$ is very large.  While any spin has exactly equal probability of being $\uparrow$ or $\downarrow$, it is not given that exactly half of $N$ are $\uparrow$.  This is easy to see when considering ten coins dropped on the ground: there is a $\approx$25\% chance that half of them will be heads and a $\approx$75\% chance of another outcome.
+
+
+The relative odds of the system having $a$ particles $\uparrow$ to the system have $b$ particles $\uparrow$ is interesting.  To simplify notation, we give the name $M_x$ to number of ways of getting $x$ particles $\uparrow$ and call it the \textit{multiplicity} of getting $x$.  Now it becomes apparent that the probability $P_a$ of the system having $a$ spins $\uparrow$ is related to the probability $P_b$ of having $b$ spins $\uparrow$ is
+
+\begin{eqnarray}
+ \frac{P_a}{P_b} = \frac{M_a}{M_b},
+\end{eqnarray}
+
+since a higher multiplicity is associated with a higher probability for each state.
+
+Using $S=k\ln M$ and other thermodynamic relationships (TODO come back and actually work all this out) we arrive at 
+
+\begin{eqnarray}
+ \frac{P_a}{P_b} = \frac{e^{-E_a/kT}}{e^{-E_b/kT}},
+\end{eqnarray}
+
+which is known as the Boltzmann factor that relates $P_a$ to $P_b$.  For the spin-\half{} system this gives us the ratios of populations
+
+\begin{eqnarray}
+ \frac{N_\downarrow}{N_\downarrow} = \frac{e^{E_\downarrow/kT}}{e^{E_\uparrow/kT}}.
+\end{eqnarray}
+
+
+We are now in position to rewrite the definition of polarization (Equation \ref{eqn:polarization-definition}) in terms of thermodynamic variables:
+
+\begin{eqnarray}
+ \mathcal{P}&=&\frac{N_\uparrow}{N_\uparrow+N_\downarrow}-\frac{N_\downarrow}{N_\uparrow+N_\downarrow} \\
+ &=& \frac{1}{1+\frac{N_\downarrow}{N_\uparrow}}-\frac{1}{\frac{N_\uparrow}{N_\downarrow}+1} \\
+ &=& \frac{1}{1+e^{-\Delta E/kT}}-\frac{1}{1+e^{\Delta E/kT}} \\
+ &=& \tanh\left(\frac{\mu H}{kT}\right)
+\end{eqnarray}
+
+where $\Delta E\equiv E_\uparrow-E_\downarrow = 2 \mu H$.
 
  \subsection{DNP}
 Dynamic Nuclear Polarization (DNP) is a process of using microwave radiation to pump electron-proton pairs to higher energy (polarized) states.  The relaxation time for the electron is much shorter than that of the proton, so the proton remains polarized while the electron is able to be paired with other protons for polarization.
