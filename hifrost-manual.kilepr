@@ -151,10 +151,10 @@ order=-1
 
 [item:hardware.tex]
 archive=true
-column=19
+column=66
 encoding=UTF-8
 highlight=LaTeX
-line=6
+line=82
 mode=LaTeX
 open=true
 order=3
@@ -171,10 +171,10 @@ order=-1
 
 [item:hifrost.tex]
 archive=true
-column=90
+column=27
 encoding=UTF-8
 highlight=LaTeX
-line=6
+line=23
 mode=LaTeX
 open=true
 order=0
@@ -516,16 +516,16 @@ JumpList=
 ViMarks=.,17,19,[,17,18,],17,19
 
 [view-settings,view=0,item:hardware.tex]
-CursorColumn=19
-CursorLine=6
+CursorColumn=66
+CursorLine=82
 JumpList=
-ViMarks=.,12,8,[,12,0,],12,44
+ViMarks=.,82,65,[,82,17,],82,65
 
 [view-settings,view=0,item:hifrost.tex]
-CursorColumn=90
-CursorLine=6
+CursorColumn=27
+CursorLine=23
 JumpList=
-ViMarks=.,6,89,[,6,49,],6,89
+ViMarks=.,6,0,[,6,0,],6,0
 
 [view-settings,view=0,item:history.tex]
 CursorColumn=0
