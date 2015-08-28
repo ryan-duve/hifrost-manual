@@ -8,7 +8,7 @@ In the presence of a magnetic field, spin-\half{} nuclei tend to align themselve
 \mathcal{P}=\frac{N_\uparrow-N_\downarrow}{N_\uparrow+N_\downarrow},
 \end{eqnarray}
 
-where $N_\downarrow$ ($N_\uparrow$) is the population of spins with $m_z$ equal to $-$\half{} (+\half).  For simplicity, the remainder of the section assumes particles of spin-\half{}.
+where $N_\downarrow$ ($N_\uparrow$) is the population of spins with $m_z$ equal to $-$\half{} (+\half).  For simplicity, the remainder of the section assumes particles of spin-\half{} unless otherwise stated.
 
 \subsection{Thermal Polarization Derivation}
 
@@ -43,13 +43,36 @@ We are now in position to rewrite the definition of polarization (Equation \ref{
  \mathcal{P}&=&\frac{N_\uparrow}{N_\uparrow+N_\downarrow}-\frac{N_\downarrow}{N_\uparrow+N_\downarrow} \\
  &=& \frac{1}{1+\frac{N_\downarrow}{N_\uparrow}}-\frac{1}{\frac{N_\uparrow}{N_\downarrow}+1} \\
  &=& \frac{1}{1+e^{-\Delta E/kT}}-\frac{1}{1+e^{\Delta E/kT}} \\
- &=& \tanh\left(\frac{\mu H}{kT}\right)
+ &=& \tanh\left(\frac{\mu H}{kT}\right) \label{eqn:proton-polarization}
 \end{eqnarray}
 
-where $\Delta E\equiv E_\uparrow-E_\downarrow = 2 \mu H$.
+where $\Delta E\equiv E_\uparrow-E_\downarrow = 2 \mu H$, the typical difference in energy levels from a system undergoing Zeeman splitting.
+
+\subsection{Thermal Polarization Values}
+
+Equation \ref{eqn:proton-polarization} gives the degree of polarization for a proton in magnetic field $H$ and temperature $T$.  With modern cryogenic technology, it is relatively straightforward to cool a target sample to \SI{1}{\kelvin} and, using a superconducting solenoid magnet, magnetic fields as high as \SI{7}{\tesla}.
+
+Plugging these numbers and the magnetic moment of the proton into the thermal polarization equation yields
+
+\begin{eqnarray}
+ \mathcal{P} &=& \tanh\left(\frac{\mu H}{kT}\right) \\
+ &=& \tanh\left(\frac{(\SI{1.4E-26}{\joule/\tesla})(\SI{7}{\tesla})}{\left(\SI{1.3E-23}{\joule/\kelvin}\right)\left(\SI{1}{\kelvin}\right)}\right)\\
+ &=&0.75\%.
+\end{eqnarray}
+
+The deuteron's polarization, which has a different dependence on $H$ and $T$ due to being a spin-1 system, can achieve thermal polarizations of
+
+\begin{eqnarray}
+ \mathcal{P} &=& \frac{4\tanh\frac{\mu B}{2kT}}{3+\tanh^2\frac{\mu B}{2kT}} \\
+ &=& \frac{4\tanh\frac{(\SI{4.3E-27}{\joule/\tesla})(\SI{7}{\tesla})}{(2\SI{1.3E-23}{\joule/\kelvin})(\SI{1}{\kelvin})}}{3+\tanh^2\frac{(\SI{4.3E-27}{\joule/\tesla})(\SI{7}{\tesla})}{(2\SI{1.3E-23}{\joule/\kelvin})(\SI{1}{\kelvin})}}\\
+ &=&0.02\%.
+\end{eqnarray}
+
+While the most modern systems can reach lower temperatures and higher fields, the marginal increase in polarization does not warrant dealing with practical issues of such systems.  For example, lowering $T$ from \SI{1}{\kelvin} to \SI{10}{\milli\kelvin}, a very difficult task, translates to a deuteron polarization of 1.9\%.
+
 
  \subsection{DNP}
-Dynamic Nuclear Polarization (DNP) is a process of using microwave radiation to pump electron-proton pairs to higher energy (polarized) states.  The relaxation time for the electron is much shorter than that of the proton, so the proton remains polarized while the electron is able to be paired with other protons for polarization.
+Dynamic Nuclear Polarization (DNP) is a process of using microwave radiation to optically pump electron-proton pairs to energy states departing from thermal equilibrium (i.e., polarization states).  The relaxation time for the electron is much shorter than that of the proton, so the proton remains polarized while the electron is able to be paired with other protons for polarization.
 
 \begin{figure}
  \centering
