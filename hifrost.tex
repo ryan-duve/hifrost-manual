@@ -4,6 +4,7 @@
 \usepackage{amsmath} %Never write a paper without using amsmath for its many new commands 
 \usepackage{amssymb} %Some extra symbols 
 %\usepackage{makeidx} %If you want to generate an index, automatically 
+\usepackage{graphicx}
 %\usepackage[draft]{graphicx} %use [draft] to not paint images for way faster compile times
 \usepackage{caption} %If you want to include postscript graphics 
 \usepackage{mystyle} %Create your own file, mystyle.sty where you put all your own \newcommand statements, for example. 
@@ -16,6 +17,15 @@
 \usepackage[titletoc]{appendix}
 \usepackage[normalem]{ulem} %strikeout text, http://tex.stackexchange.com/questions/23711/strikethrough-text#23712
 \usepackage{siunitx} %usage \SI{50}{\milli\kelvin} ==> 50 mK
+
+%TikZ
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{shapes,decorations}
+\usepackage{pgfplots} %quick drawing TikZ graphs
+\usepgfplotslibrary{units}
+\pgfplotsset{compat=1.9} %suppress TikZ warning
+
 
 
 %\includeonly{theory}
