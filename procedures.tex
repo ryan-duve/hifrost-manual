@@ -1,13 +1,19 @@
 \chapter{Procedures} 
 \label{procedures}  
+
+\readsafetychapterfirst{}
+
+This chapter is a reference guide and not to be used as a training manual.  New workers must be trained by experienced workers over at least two cooldowns before being allowed to perform these procedures without oversight.
+
 \section{Evacuating Transfer lines}
 Helium transfer lines (TLs) are vacuum insulated tubes.  One end is plunged directly into a helium dewar while the other delivers liquid helium to a vessel, with a pressure differential driving the helium through.  If the vacuum jacket is compromised, the helium will cool the outer shell of the TL and frost up (helium will of course stop transferring).  Once this happens, the only solution is to remove and warm up the transfer line and evacuate the vacuum space.
 
 
-TLs are evacuated with a leak checker until the leak rate plateaus.  It is recommended to pump overnight, but in a bind it can be done quicker.  An evacuated TL will be fine for months, but in practice it is safer to pump down each TL a few days before beginning a cooldown in case the vacuum space was somehow compromised in storage/transport.
+TLs are evacuated with a leak detector (LD) until the leak rate plateaus.  It is recommended to pump overnight, but in a bind it can be done quicker.  An evacuated TL will be fine for months, but in practice it is safer to pump down each TL a few days before beginning a cooldown in case the vacuum space was somehow compromised in storage/transport.
 
 
 \subsection{Cryofab TLs}
+\label{cryofabTLs}
 
 Cryofab TLs have a proprietary vacuum pump out ports which require a special adapter to KF (Figure \ref{fig:cf-adapter}).
 
@@ -30,19 +36,19 @@ Cryofab TLs have a proprietary vacuum pump out ports which require a special ada
 To pump out the vacuum space:
 
 \begin{enumerate}
- \item Warm up the LD.
+ \item Plug in and turn on the LD to warm it up.
  \item Set the TL on the ground.
  \item Loosen the brass fitting on the adapter (do not loosen all the way or the o-ring will fall out).
  \item Pull the adapter stem out about an inch and fit the adapter on the TL pump out until almost the entire vacuum jacket pump out is covered (Figure \ref{fig:cf-adapter-on-tl}).
  \item Tighten the brass nut.
- \item Support the weight of both ends of the TL on stable objects and attach the KF adapter to the leak checker (we use a chair and lab bench in Figure \ref{fig:cf-adapter-pushedin}).  Do not allow the TL to torque about the adapter or the TL and adapter may both be damaged.
+ \item Support the weight of both ends of the TL on stable objects and attach the KF adapter to the leak detector (we use a chair and lab bench in Figure \ref{fig:cf-adapter-pushedin}).  Do not allow the TL to torque about the adapter or the TL and adapter may both be damaged.
  \item Push the stem in.
  \item Screw in the stem about 5 turns (count them if this is your first time) while gently pushing in so the threads grab.  The threads are tightening when the stem is pulled in slightly each turn.
  \item Gently pull the stem out half an inch.  \textbf{If you pull too far you will break the adapter; see Figure \ref{fig:cf-adapter-pulledout}.} If TL was under vacuum, you will hear a hiss indicating the vacuum jacket is vented.  
- \item Start the LD pump and wait for 2 minutes.  This should bring the LR to a low enough value to detect an external leak.  Spray both vacuum connections on the adapter with helium.
+ \item Start the LD pump and wait for 2 minutes.  This should bring the leak rate (LR) to a low enough value to detect an external leak.  Spray both vacuum connections on the adapter with helium.
  \item If the KF joint leaks, clean it and try again.  If the TL-to-adapter joint leaks, either a) the adapter is not entirely over the TL pump out port or b) the brass nut is not tight enough.  Try again.
  \item Pump until the LR stops declining, preferably overnight.
- \item Again, spray both joints with helium gas.  Start over and remake the offending connection if necessary.
+ \item Again, spray both joints with helium gas.  Start over and remake the leaking connection if necessary.
  \item Flow helium gas through the TL (if there is a valve like Figure \ref{fig:cf-tl-pumpout}, open it first).  If there is a leak between the inner cavity of the TL and the vacuum space the TL is broken and not suitable for a cooldown.
 \end{enumerate}
 
@@ -52,7 +58,7 @@ Athe end of leak checking, use the following procedure to disconnect the TL from
  \item Push the stem straight in all way.
  \item Vent the LD.  If there is a long hiss, the stem was not pushed in all the way and the vacuum space is now filled with air.  A short hiss indicates only the small volume in the KF adapter was vented (this is good).
  \item Unscrew the stem.  If you counted the number of turns in the above section, you know how many times to unscrew it.  Otherwise, just turn a few dozen times to be sure.  Not entirely unscrewing the stem will result in the TL being entirely vented in the next step.
- \item Pull the stem back about an inch.  \textbf{If you pull too far you will break the adapter; see Figure \ref{fig:cf-adapter-pulledout}.}  You should not hear a hiss.
+ \item Pull the stem back about an inch.  \textbf{If you pull too far you will break the adapter; see Figure \ref{fig:cf-adapter-pulledout}.}  If you hear a hiss, the vacuum line is now vented.  Start the procedure again at the beginning of Section \ref{cryofabTLs}.
  \item Disconnect the KF connection from the LD and set the TL on the ground.  This may require two people to do safely depending on the weight of the TL.  Be careful not to bump the TL.
  \item Loosen the brass nut about two turns and wiggle the adapter off the TL.  Unscrewing the nut too much will make the connector fall apart; \textbf{unscrewing too little will break the adapter and/or TL if you try forcing it off}.  Do not try forcing it.
 \end{enumerate}
@@ -120,7 +126,7 @@ Gather the following:
 \item KF adapter to LTL
 \item teflon tape
 \item flathead screwdriver
-\item leak detector (LD) with KF25 oring/clamp
+\item leak detector (LD) with KF25 o-ring/clamp
 \item ziplock bag
 \end{itemize}
 \end{minipage}
@@ -146,7 +152,7 @@ Gather the following:
  \centering
  \includegraphics[width=.80\linewidth]{img/ltl-ports.jpg}
  % ltl-ports.jpg: 1026x720 pixel, 72dpi, 36.19x25.40 cm, bb=0 0 1026 720
- \caption{The three ports on the LTL: A) emergency relief popoff (this will shoot very high when the LTL freezes!), B) vacuum jacket pump port and brass placeholder screw, C) side screw valve.}
+ \caption{The three ports on the LTL: A) emergency relief popoff, B) vacuum jacket pump port and brass placeholder screw, C) side screw valve.}
  \label{fig:ltl-ports}
 \end{figure}
 
@@ -169,7 +175,7 @@ Indium extrusion is the name of the process that transforms bulk indium into nic
 
 Indium scraps or ingots are put into a hollow cylinder with a small hole in the bottom, and the indium is softened with heat and pushed through to make a 1 mm wire.  The melting point of indium is about $150 ^\circ$ C, but approaching this temperature leaves the indium ``runny'' and impossible to shape.  We have found heating the cylinder to $100 ^\circ$ C with a heating tape yields the ideal consistency.
 
-Our first indium die, the plate at the bottom of the hollow cylinder that has a small hole for shaping indium, had a 1 mm hole.  For whatever reason, this produced indium 0.75 mm in diameter (too small for the Hifrost flanges).  We increased the die to 41 mils (about 5\% larger), and the indium wire came out at 1 mm.  
+On the first indium die, the plate at the bottom of the hollow cylinder that has a small hole for shaping indium, had a 1 mm hole.  For whatever reason, this produced indium 0.75 mm in diameter (too small for the Hifrost flanges).  We increased the die to 41 mils (about 5\% larger), and the indium wire came out at 1 mm.  
 
 When extruding the indium, a varying force on the hydraulic pump sometimes leads to uneven wire (something like sausage links).  To prevent this, a continuous, non-varying force should be applied for an entire press.
 
@@ -188,11 +194,11 @@ A \textbf{thermocouple} sensor is used with an accompanying \textbf{thermocouple
 
 A layer of \textbf{aluminum foil} is wrapped around the heating tapes to keep the heat from dissipating away.
 
-\textbf{Latex and clothe gloves} are for personnel safety and keeping the indium sanitary.
+\textbf{Latex gloves} are for personnel safety and to keep from contaminating the indium.
 
 A \textbf{variable alternating current} unit adjusts the temperature of the heating tape.
 
-The indium is extuded onto sterile \textbf{\com{Absorbond Wiper Sheets, TX}} 9\inches x 9\inches, 409, and kept for storage.
+The indium is extuded onto sterile \textbf{\com{Absorbond Wiper Sheets, TX}} 9\inches x 9\inches, and kept for storage for later use.
 
 An \com{Enerpc} P39 Porta Power \textbf{hydraulic hand pump} provides the force for extrusion.
 
@@ -246,6 +252,7 @@ An \com{Enerpc} P39 Porta Power \textbf{hydraulic hand pump} provides the force 
 
 \section{Making Indium Seals}
 
+\label{making-indium-seals}
 
 \begin{enumerate}
  \item First, clean both indium seal flanges.
@@ -322,7 +329,7 @@ An \com{Enerpc} P39 Porta Power \textbf{hydraulic hand pump} provides the force 
 \section{Weighing LHe Dewars}
 \label{weigh-250LD}
 
-Do not attempt this procedure until first being cleared by DFELL mechanical operations (see Joe Faircloth).
+Do not attempt this procedure until first being cleared by DFELL mechanical operations (see Joe Faircloth).  All workers who operate the hoist must first be trained.
 
 The Airgas LHe dewars are weighed as a de facto measurement of helium consumption.  We weigh them before and after use.
 
@@ -346,9 +353,9 @@ The Airgas LHe dewars are weighed as a de facto measurement of helium consumptio
 \section{Cleaning Viton/Buna O-rings and Grooves}
 \label{cleaning-orings}
 
-Hifrost only uses isopropyl alcohol for cleaning vacuum parts.  Methanol bottles are scattered around DFELL, but they are not to be used.
+Hifrost only uses isopropyl alcohol for cleaning vacuum parts.  Other solvents, such as methanol, are used in the DFELL, but they are not to be used for Hifrost.
 
-Most o-ring encountered are for KF joints.  It is not practical to clean every o-ring every time it is touched, and this is unnecessary because our vacuum system is not UHV, so most KF joints can be visually inspected for dirt before use.
+Most o-rings are for KF joints.  It is not practical to clean every o-ring every time it is touched, and this is unnecessary because our vacuum system is not UHV, so most KF joints can be visually inspected for dirt before use.
 
 
 \vsepfbox{\parbox{.93\textwidth}{\centering
@@ -360,7 +367,7 @@ To clean a KF o-ring:
  \item remove o-ring from center piece
  \item moisten a Kim Wipe with isopropyl alcohol
  \item gently pinch the o-ring with the wipe, rotating it around to clean the whole surface
- \item replace the oring over the centerpiece
+ \item replace the o-ring over the centerpiece
  \item wipe down the outside of the o-ring one more time
  \item reassemble the KF joint, trying to touch only the centerpiece as much as possible (tip: gravity is your friend, here)
 \end{enumerate}
@@ -378,7 +385,7 @@ To minimize the change of them leaking, the following should be done each time o
  \item replace the o-ring and seal the flange immediately
 \end{enumerate}
 
-The vacuum grease feels unpleasant on hands, so latex gloves may be used.  Otherwise, be sure to wash up afterward so vacuum grease doesn't contaminate other fridge components.
+The vacuum grease feels unpleasant on hands, so use of latex gloves is recommended.  Be sure to wash up afterward so vacuum grease doesn't contaminate other fridge components.
 
 \section{Installing Kenol Connectors}
 
@@ -421,7 +428,7 @@ The LHe level of helium dewars is checked upon delivery and after they are used 
 \begin{enumerate}
  \item Remove zip ties and plastic wrap on full 250LD.
  \item Make sure there is nothing sensitive directly above the dewar, then release pressure by opening main flow valve on top of the dewar. A large, cold plume will exhaust pressurized helium gas.
- \item Use cryogenic gloves to slowly lower the level probe into the main flow valve. A smaller cold plume will exhaust upwards as the level probe cools down.
+ \item While wearing cryogenic gloves, goggles and a face shield, slowly lower the level probe into the main flow valve. A smaller cold plume will exhaust upwards as the level probe cools down.
  \item Plug the level probe into the level probe readout and record the reading. As a sanity check, lift the level probe a few inches to make sure the readout changes correspondingly.
  \item Disconnect the level probe and remove it from the 250LD, storing it where it can safely warm up.
  \item Close the main flow port.
@@ -446,7 +453,7 @@ The procedure below ensures air will not get in to the pressurization line and f
 
 \section{Vacuum Rise Testing}
 
-A leak checker is the proper way to determine if a vacuum volume is leak tight.  However, it is not always practical and sometimes very difficult to leak check a large volume, so we use a vacuum rise test as a course characterization of the vacuum fidelity.
+A leak detector is the proper way to determine if a vacuum volume is leak tight.  However, it is not always practical and sometimes very difficult to leak check a large volume, so we use a vacuum rise test as a course characterization of the vacuum fidelity.
 
 
 The concept is to pull a vacuum down in a volume, isolate it from the pump, then watch if the vacuum rises.  Outgassing and a leak are generally the only two effects we will see, but outgassing usually stops the pressure rise far below 1 atm (e.g., water vapor pressurizes to about 24 mbar).  If the volume is small, virtual leaks (finite, mostly trapped pockets of gas that take long times to equilibrate with the main volume) may also have a visible effect.
@@ -505,7 +512,7 @@ When putting the fridge together, there are two primary concerns: forgetting to 
 \item 6x M2x12 machine screws and nuts, 316SS
 \end{itemize}
 
-Read the section on making indium seals.
+Read Section \ref{making-indium-seals} on making indium seals.
 
 Hold the MC in place with the chemistry clamp so the bell housing is about 1 cm from touching the fridge flange.  Place the bolts through the MC holes and gently tighten the nuts one or two turns so the bolts don't fall.  Inspect the indium wire to make sure it is still in place, then tighten the nuts in a ``star'' pattern (never tightening adjacent screws consecutively).  Hold the bolts with an allen key while turning the wrench so the heads do not strip.  Use only the special MC wrench so the fridge does not scratch.
 
@@ -544,7 +551,7 @@ Make sure the waveguide (or the support) is not touching the MC.  Normally this 
 \item 6x M3x12 machine screws
 \end{itemize}
 
-Read the section on making indium seals.
+Read Section \ref{making-indium-seals} on making indium seals.
 
 Similar to installing the MC, first prepare the IVC indium seal and place it in the groove on the IVC flange.  One person holds the IVC within about 1 cm from the fridge while another puts in the screws.  Initially, only turn in 2 diametrically opposite screws 1 or 2 turns each so they support the IVC and it no longer needs to be held by another person.  Turn in the other 4 screws 1 or 2 turns each.  Inspect the indium seal to make sure it is still in place (it should not be touching the fridge flange yet) before turning in the screws in a ``star pattern'' similar to the MC.  Be careful not to strip the screw heads.
 
@@ -559,19 +566,19 @@ Leak check if possible.
  \item pliers for pilot pins
 \item 5 mm allen key
 \item three OVC cans (inner, outer, nose cone)
-\item triple flange orings
+\item triple flange o-rings
 \item pilot pins
 \item 2x nut plates
 \item 8x M6x25 triple flange machine screws
 \end{itemize}
 
-Make sure the orings and grooves are clean (details at Section \ref{cleaning-orings}).  Remove the OVC cans from the OVC protective crate and place them on the blue fridge lift.  The black lines drawn on the outer flange surfaces should already be aligned by tee pins holding the two flanges together.  Secure the OVC in place with the plastic nut and threaded rod that fits through the fridge lift platform.  Hook up the OVC manifold to the OVC pump out port (making sure the hose is coming off at the appropriate angle for Blowfish clearance) and warm up the OVC turbo pump.  
+Make sure the o-rings and grooves are clean (details at Section \ref{cleaning-orings}).  Remove the OVC cans from the OVC protective crate and place them on the blue fridge lift.  The black lines drawn on the outer flange surfaces should already be aligned by tee pins holding the two flanges together.  Secure the OVC in place with the plastic nut and threaded rod that fits through the fridge lift platform.  Hook up the OVC manifold to the OVC pump out port (making sure the hose is coming off at the appropriate angle for Blowfish clearance) and warm up the OVC turbo pump.  
 
 The nose cone is secured to the outer OVC can with yellow (non-residual) tape when it comes out of the storage crate.  The tape prevents it from falling off while the fridge is vertical, but it can also prevent a proper o-ring seal during the initial pump down.  The solution is to leave the tape on until right before OVC pumping begins, then remove it and keep a hand under the nose cone as the pumping begins.  This ensures the nose cone will not fall at any point in the OVC prep.  Once pumping begins, optionally leak check the nose cone and triple flange vacuum joints.
 
 With the OVC still being pumped, remove it from the fridge lift and raise it over the fridge.  This should not require appreciably more force than the weight of the OVC itself.  Line up the black lines on the triple flange and push the pilot pins in by hand, using pliers if they need to be rotated or pulled out slightly.
 
 
-Loosely turn in all the triple flange screws, careful not to strip the aluminum taps.  Tighten in a star formation so the oring does not become unevenly compressed.
+Loosely turn in all the triple flange screws, careful not to strip the aluminum taps.  Tighten in a star formation so the o-ring does not become unevenly compressed.
 
 \section{Removing/Replacing \het{} Baffles}
